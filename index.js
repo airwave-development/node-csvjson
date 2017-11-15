@@ -54,7 +54,7 @@ function processDir(fileString) {
 
 		glob(fileStringAbsolute, options, function(error, files) {
 			if (error) {
-				console.error('Error: could not read files');
+				console.error('node-csv: could not read files');
 				process.exit(0);
 				return;
 			}
@@ -66,7 +66,7 @@ function processDir(fileString) {
 
 		fs.readdir(fileStringAbsolute, function(error, files) {
 			if (error) {
-				console.error('Error: could not read files');
+				console.error('node-csv: could not read files');
 				process.exit(0);
 				return;
 			}
@@ -86,7 +86,7 @@ function processDir(fileString) {
 
 function generateFilePaths(files) {
 	if (files.length === 0) {
-		console.error('Error: no files found');
+		console.error('node-csv: no files found');
 		process.exit(0);
 		return;
 	}
@@ -103,7 +103,7 @@ function generateFilePaths(files) {
 	}
 
 	if (Object.keys(fileObject).length === 0) {
-		console.warn('Waring: no files processed');
+		console.warn('node-csv: no files processed');
 		process.exit(0);
 		return;
 	}
@@ -160,7 +160,7 @@ function processFileContents(filePath, optionsObject) {
 						}
 
 						if (processOperationFinished) {
-							console.log('Node CSV-JSON: File conversion finished');
+							console.log('node-csv: file conversion completed');
 							process.exit(0);
 							return;
 						}
