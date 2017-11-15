@@ -1,0 +1,29 @@
+{
+    "name": "node-csvjson",
+    "version": "0.0.1",
+    "description": "convert csv to json object",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/airwave-development/node-csvjson.git"
+    },
+    "keywords": [
+        "csv",
+        "json",
+        "node"
+    ],
+    "author": "Airwave",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/airwave-development/node-csvjson/issues"
+    },
+    "homepage": "https://github.com/airwave-development/node-csvjson#readme",
+    "dependencies": {
+        "csv-parse": "^0.0.6",
+        "glob": "^7.1.2",
+        "path": "^0.12.7"
+    }
+}
