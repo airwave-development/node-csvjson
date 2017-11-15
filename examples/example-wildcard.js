@@ -1,1 +1,1 @@
-require('../index')('test/**.*');
+require('../index')('test/**/**.*');
